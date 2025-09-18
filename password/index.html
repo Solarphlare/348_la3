@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Password Verification &bull; Lab 3</title>
+    <link rel="stylesheet" href="password.css">
+    <meta name="theme-color" content="#f5f5f5" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#18181b" media="(prefers-color-scheme: dark)">
+</head>
+
+<body class="tr-off">
+    <div id="card" class="tr-off">
+        <div id="card-content">
+            <div id="card-header">
+                <svg width="42" height="42" id='icon' class='tr-off' viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M7.10102 10H7V8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8V10H16.899M12 14V16M19 15C19 18.866 15.866 22 12 22C8.13401 22 5 18.866 5 15C5 11.134 8.13401 8 12 8C15.866 8 19 11.134 19 15Z"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <div id="card-header-text">
+                    <h2 class="text-2xl tr-off font-semibold">Password Verification</h2>
+                    <p class="tr-off">Enter a password below. Passwords must be at least 8 characters long.</p>
+                </div>
+            </div>
+            <div id="password-form">
+                <p id="password-status-text" class="hidden"></p>
+                <div id="password-fields">
+                    <input type="password" id="password" placeholder="Enter password" class="tr-off password-field"
+                        autocomplete="off">
+                    <input type="password" id="confirm-password" placeholder="Confirm password"
+                        class="tr-off password-field" autocomplete="off">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="password.js"></script>
+</body>
+
+</html>

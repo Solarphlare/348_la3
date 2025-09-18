@@ -1,0 +1,46 @@
+<html>
+
+<head>
+    <title>Lab 3</title>
+    <link rel="stylesheet" href="index.css">
+    <meta name="theme-color" content="#f5f5f5" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#18181b" media="(prefers-color-scheme: dark)">
+</head>
+
+<body class="tr-off">
+    <div id="card" class="tr-off">
+        <div id="card-content">
+            <div id="card-header">
+                <img src="assets/icon.png" id="icon">
+                <div id="card-header-text">
+                    <h2 class="text-2xl tr-off font-semibold">Lab 3</h2>
+                    <p class="tr-off">Welcome to my Lab 3 page! To go to a practice page, choose a page from the dropdown below.</p>
+                </div>
+            </div>
+            <div id="page-select">
+                <div style="width: 100%; display: flex; position: relative; flex-direction: column;">
+                    <button class="dropdown tr-off" id="page-dropdown">
+                        <p class="dropdown-text tr-off">Select a page</p>
+                        <svg width="20" height="24" style="opacity: 0.5;" viewBox="0 0 24 24" fill="none" id="dropdown-icon"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9 18L15 12L9 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+
+                    <div id="dropdown-content">
+                        <button class="dropdown-item transition-all" id="profile-selector" tabindex="0">Profile</button>
+                        <button class="dropdown-item transition-all" id="css-controls-selector" tabindex="0">CSS Controls</button>
+                        <button class="dropdown-item transition-all" id="password-selector" tabindex="0">Password Verification</button>
+                        <button class="dropdown-item transition-all" id="mult-selector" tabindex="0">Multiplication Table</button>
+                    </div>
+                </div>
+                <button id="go-button" disabled class="tr-off">Go</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
